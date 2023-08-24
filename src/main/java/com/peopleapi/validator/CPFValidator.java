@@ -4,7 +4,7 @@ public class CPFValidator {
     public static boolean isValidCPF(String cpf) {
 
         String pattern = "^[0-9\\-\\.]+$";
-        if(!cpf.matches(pattern)){
+        if (!cpf.matches(pattern)) {
             return false;
         }
 

@@ -1,15 +1,13 @@
 package com.peopleapi.entity;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 import org.hibernate.validator.constraints.br.CPF;
 
 import java.time.LocalDate;
 import java.util.List;
 
+@Builder
 @Getter
 @Setter
 @NoArgsConstructor

@@ -11,16 +11,16 @@ import org.springframework.context.annotation.Primary;
 @SpringBootApplication
 public class PersonApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(PersonApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(PersonApplication.class, args);
+    }
 
-	@Bean
-	@Primary
-	public void objectMapper(){
-		ObjectMapper mapper = new ObjectMapper();
-		mapper.registerModule(new JavaTimeModule());
-		mapper.configure(SerializationFeature.WRITE_DATES_AS_TIMESTAMPS, false);
-	}
+    @Bean
+    @Primary
+    public void objectMapper() {
+        ObjectMapper mapper = new ObjectMapper();
+        mapper.registerModule(new JavaTimeModule());
+        mapper.configure(SerializationFeature.WRITE_DATES_AS_TIMESTAMPS, false);
+    }
 
 }

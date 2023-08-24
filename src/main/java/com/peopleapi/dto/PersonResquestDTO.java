@@ -4,7 +4,7 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 import com.peopleapi.entity.Contact;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
-import jakarta.validation.constraints.Past;
+import jakarta.validation.constraints.PastOrPresent;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -25,6 +25,7 @@ public class PersonResquestDTO {
     private String cpf;
     @NotNull
     @JsonFormat(pattern="dd-MM-yyyy")
+    @PastOrPresent
     private LocalDate birthday;
     @NotNull
     private List<Contact> contactList;

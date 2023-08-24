@@ -2,9 +2,7 @@ package com.peopleapi.dto;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.peopleapi.entity.Contact;
-import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
-import jakarta.validation.constraints.Past;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
