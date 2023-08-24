@@ -1,0 +1,9 @@
+services:
+  postgres:
+    image: 'postgres:latest'
+    environment:
+      - 'POSTGRES_DB=personapi'
+      - 'POSTGRES_PASSWORD=personapi'
+      - 'POSTGRES_USER=personapi'
+    ports:
+      - '5432'
